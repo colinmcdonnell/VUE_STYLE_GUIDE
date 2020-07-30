@@ -14,24 +14,24 @@ This guide provides a uniform way to structure your [Vue.js](http://vuejs.org/) 
 
 ## Table of Contents
 
-1. [Module based development](#markdown-header-1-module-based-development)
-2. [Variable names](#markdown-header-2-variable-names)
-3. [Reusable axios calls](#markdown-header-3-reusable-axios-calls)
-4. [Vue component names](#markdown-header-4-vue-component-names)
-5. [Keep component expressions simple](#markdown-header-5-keep-component-expressions-simple)
-6. [Keep component props primitive](#markdown-header-6-keep-component-props-primitive)
-7. [Harness your component props](#markdown-header-7-harness-your-component-props)
-8. [Assign `this` to `component`](#markdown-header-8-assign-this-to-component)
-9. [Component structure](#markdown-header-9-component-structure)
-10. [Component imports](#markdown-header-10-component-imports)
-11. [Component event names](#markdown-header-11-component-event-names)
-12. [Use component name as style scope](#markdown-header-12-use-component-name-as-style-scope)
-13. [Lint your component files](#markdown-header-13-lint-your-vue-projects-files-and-use-prettier)
-14. [Node packages and dependencies](#markdown-header-14-node-packages-and-dependencies)
-15. [Use mixins wherever possible](#markdown-header-15-use-mixins-wherever-possible)
-16. [Create components when needed](#markdown-header-16-create-components-when-needed)
-17. [GIT](#markdown-header-17-git)
-18. [SCSS styles](#markdown-header-18-scss-styles)
+1. [Module based development](#1-module-based-development)
+2. [Variable names](#2-variable-names)
+3. [Reusable axios calls](#3-reusable-axios-calls)
+4. [Vue component names](#4-vue-component-names)
+5. [Keep component expressions simple](#5-keep-component-expressions-simple)
+6. [Keep component props primitive](#6-keep-component-props-primitive)
+7. [Harness your component props](#7-harness-your-component-props)
+8. [Assign `this` to `component`](#8-assign-this-to-component)
+9. [Component structure](#9-component-structure)
+10. [Component imports](#10-component-imports)
+11. [Component event names](#11-component-event-names)
+12. [Use component name as style scope](#12-use-component-name-as-style-scope)
+13. [Lint your component files](#13-lint-your-vue-projects-files-and-use-prettier)
+14. [Node packages and dependencies](#14-node-packages-and-dependencies)
+15. [Use mixins wherever possible](#15-use-mixins-wherever-possible)
+16. [Create components when needed](#16-create-components-when-needed)
+17. [GIT](#17-git)
+18. [SCSS styles](#18-scss-styles)
 
 
 ## 1. Module based development
@@ -61,7 +61,7 @@ Each Vue component (like any module) must be [FIRST](https://addyosmani.com/firs
 
 If your component does too much or gets too big, split it up into smaller components which each do just one thing.
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 2. Variable Names
@@ -101,7 +101,7 @@ var isLoading = false
 var firstName = 'John'
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 3. Reusable Axios Calls
@@ -109,7 +109,7 @@ var firstName = 'John'
 ***Use async/await.***
 Async/await allows us to write asynchronous code in a synchronous manner. 
 
-Always set up your axios instance(s) in a way to prevent duplicate efforts when writing calls. We can do this by using mixin files (see [#13](#markdown-header-15-use-mixins-wherever-possible)) or plugins.
+Always set up your axios instance(s) in a way to prevent duplicate efforts when writing calls. We can do this by using mixin files (see [#13](#15-use-mixins-wherever-possible)) or plugins.
 
 If we need to make multiple calls to the same end point, there should only be one axios call written and then reused when necessary.
 
@@ -249,7 +249,7 @@ async getCustomerStatus() {
 }
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 4. Vue Component Names
@@ -299,7 +299,7 @@ name: "btnGroup" <!-- unpronounceable. use `button-group` instead -->
 <slider></slider> <!-- not custom element spec compliant -->
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 5. Keep component expressions simple
@@ -350,7 +350,7 @@ If it gets too complex or hard to read **move it to methods or computed properti
 </template>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 6. Keep component props primitive
@@ -383,7 +383,7 @@ Use a component attribute per props, with a primitive or function as value:
 <range-slider :config="complexConfigObject"></range-slider>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 7. Harness your component props
@@ -427,7 +427,7 @@ Harnessing your component props ensures your component will always function (def
 </script>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 8. Assign `this` to `component`
@@ -475,7 +475,7 @@ export default {
 </script>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 9. Component structure
@@ -535,7 +535,7 @@ Component structure:
 </style>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 10. Component Imports
@@ -559,7 +559,7 @@ components: {
 }
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 11. Component event names
@@ -594,7 +594,7 @@ eventBus.$emit('brandingContent', brandingContent);
 eventBus.$emit('branding-content', brandingContent);
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 12. Use component name as style scope
@@ -631,7 +631,7 @@ CSS on all tags that compose your component, leading to a no leaking css styling
 </style>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 13. Lint your vue project's files (and use prettier)
@@ -706,7 +706,7 @@ Then add settings to your package.json:
 }
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 14. Node Packages and Dependencies
@@ -726,7 +726,7 @@ Always update the team regarding what packages will need to be installed when pu
 * So we can avoid using large packages that will hinder our application's performance.
 * Reduce the amount of libraries required for an application to function.
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 15. Use mixins wherever possible
@@ -779,7 +779,7 @@ To use the mixin, simply import it into both components (I only show the mobile 
 
 ---
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 16. Create components when needed
@@ -802,11 +802,11 @@ Vue.js is a component framework based. Not knowing when to create components can
 * Secondly, on each new development, for a whole page or a portion of it, try to think before rushing in. If you know some parts of it should be a component, build it;
 * Lastly, if you're not sure, then don't! Avoid polluting your project with "possibly useful later" components, they might just stand there forever, empty of smartness. Note it's better to break it down as soon as you realize it should have been, to avoid the complexity of compatibility with the rest of the project;
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 17. GIT
-***Never commit without linting and running prettier*** (see [#13](#markdown-header-13-lint-your-vue-projects-files-and-use-prettier))
+***Never commit without linting and running prettier*** (see [#13](#13-lint-your-vue-projects-files-and-use-prettier))
 
 It is important that we do not make contributing code harder than it should be... 
 ALWAYS pull develop into your working branch once releases are made to production and the production environment branch is merged into develop.
@@ -946,7 +946,7 @@ sw.*
 
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
 ## 18. SCSS styles
@@ -1105,13 +1105,13 @@ Custom breakpoints will cause the developer to fight against their framework. Al
 </style>
 ```
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 ## PLEASE CONTRIBUTE!
 
 Create a feature branch named (yourname_revisions) and submit a Pull Request containing revisions or additions to this document.
 Add all vue developers for review.
 
-[return to table of contents](#markdown-header-american-first-finance-vuejs-style-guide-and-frontend-standards)
+[return to table of contents](#american-first-finance-vuejs-style-guide-and-frontend-standards)
 
 
