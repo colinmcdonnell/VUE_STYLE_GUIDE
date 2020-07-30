@@ -2,7 +2,6 @@
 
 
 # American First Finance Vue.js Style Guide and Frontend Standards
-### *** Including GIT and use of Sass/SCSS ***
 
 ## Purpose
 
