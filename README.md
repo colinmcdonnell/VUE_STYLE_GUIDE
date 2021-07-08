@@ -525,7 +525,15 @@ Component structure:
     methods: {},
     // component Lifecycle hooks
     beforeCreate() {},
+    created() {},
+    beforeMount() {},
     mounted() {},
+    beforeUpdate() {},
+    updated() {},
+    activated() {},
+    deactivated() {},
+    beforeUnmount() {},
+    unmounted() {}
 };
 </script>
 
@@ -953,9 +961,9 @@ sw.*
 
 ***Always avoid the following:***
 
-* **Styles should not be copied directly from the design comps**: These styles do not properly reflect what is necessary to achieve the desired UI. Font sizes and hex values are usually the only usable styles provided from design comps.
+* **Styles should not be copied directly from the design comps**: These styles do not always properly reflect what is necessary to achieve the desired UI. Font sizes and hex values are usually the only usable styles provided from design comps.
 * **Use of `!important`**: This should only be used when overriding Bootstrap, Vuetify or any other UI framework. Even then... use with caution and avoid at all cost.
-* **Use of `float` property**: We use flexbox where floats are not necessary and can cause issues with flex display.
+* **Use of `float` property**: We should use flexbox where floats are not necessary and can cause issues with display.
 * **Custom Media Queries**: We should always rely on the breakpoints that our framework provides us. Here are [Vuetify's breakpoints](https://vuetifyjs.com/en/customization/breakpoints/) and [Bootstrap's breakpoints](https://getbootstrap.com/docs/4.0/layout/overview/). It's important to know the UI framework you are working with and only target their breakpoints.
 
 ***Reasons we use SCSS:***
